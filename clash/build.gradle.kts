@@ -34,6 +34,8 @@ android {
             excludes.add("DebugProbesKt.bin")
         }
     }
+
+    buildFeatures.dataBinding = true
 }
 
 
@@ -47,7 +49,7 @@ val recyclerview = "1.2.1"
 val material = "1.6.1"
 
 dependencies {
-    implementation("com.facebook.react:react-android:0.72.8")
+    compileOnly("com.facebook.react:react-android:0.72.8")
     compileOnly("com.github.codemenworld:react-native-clash-hideapi:37cd4d58de")
 
     implementation("com.github.codemenworld:react-native-clash-core:1.0.0")
